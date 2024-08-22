@@ -1,0 +1,107 @@
+<div>
+                    <button onClick={search}>Lista de usuarios</button>
+
+                    <table>
+                        <thead>
+                            <tr id='tra'>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Correo</th>
+                                <th>Usuario</th>
+                                <th>Rol</th>
+                                <th>Direccion</th>
+                                <th>Nombre de la empresa</th>
+                                <th>Numero de contacto</th>
+                                <th>Ventas</th>
+                                <th>Ingresos</th>
+                                
+                            </tr>
+                        </thead>
+
+                        <tbody id='tbody'>
+                            {user.map((user) => {
+                                return (
+                                    <tr key={user._id} id={user._id} style={{ color: editingUserId === user._id ? 'red' : 'black' }}>
+                                    <td>{user.nombre}</td>
+                                    <td>{user.apellido}</td>
+                                    <td>{user.correo}</td>
+                                    <td>{user.usuario}</td>
+                                    <td>{user.rol}</td>
+                                    <td>{user.direccion}</td>
+                                    <td>{user.nombreDeEmpresa}</td>
+                                    <td>{user.numeroDeContacto}</td>
+                                    <td>{user.totalVentas}</td>
+                                    <table>{user.ingresosTotales}</table>
+                                    <td><button value={user._id} onClick={deleteUser}>Eliminar</button></td>
+                                    <td><button value={user._id} onClick={display}>Editar</button></td>
+            </tr>
+        );
+    })}
+</tbody>
+                    </table>
+                </div>
+
+                <div>
+
+                    <form id='formb'>
+                        <label>Nombre</label>
+                        <input type='text' name='nombre'  onChange={(e)=>{setData({...data, nombre: e.target.value})}}/>
+
+                        <label>Apellido</label>
+                        <input type='text' id='apellido' name='apellido' onChange={(e)=>{setData({...data, apellido: e.target.value})}}/>
+
+                        <label>Correo</label>
+                        <input type='text' id='correo' name='correo' onChange={(e)=>{setData({...data, correo: e.target.value})}}/>
+
+                        <label>Usuario</label>
+                        <input type='text' id='usuario' name='usuario' onChange={(e)=>{setData({...data, usuario: e.target.value})}}/>
+
+                        <select name="rol" id="rol" onChange={(e) => setData({...data, rol: e.target.value})}>
+                        <option value="null" disabled selected >Elige un rol</option>
+                        <option value="seller">seller</option>
+                        <option value="user">user</option>
+                    </select>
+
+                        <label>Direccion</label>
+                        <input type='text' id='direccion' name='direccion' onChange={(e)=>{setData({...data, direccion: e.target.value})}}/>
+
+                        <label>Nombre de la empresa</label>
+                        <input type='text' id='nombreDeEmpresa' name='nombreDeEmpresa' onChange={(e)=>{setData({...data, nombreDeEmpresa: e.target.value})}}/>
+
+                        <label>Numero de contacto</label>
+                        <input type='text' id='numeroDeContacto' name='numeroDeContacto' onChange={(e)=>{setData({...data, numeroDeContacto: e.target.value})}}/>
+
+                        <button onClick={editUser}>Actualizar</button>
+                    </form>
+                </div>
+
+
+
+
+                 <div>
+                    <button onClick={displayEstadoB}>Cambiar estado de usuario</button>
+
+                    <table>
+                        <thead>
+                            <tr id='trab'>
+                                <th>Nombre</th>
+                                <th>Usuario</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id='tbodyb'>
+                            {estado.map((estado) => {
+                                return (
+                            <tr>
+                                    <td>{estado.nombre}</td>
+                                    <td>{estado.usuario}</td>
+                                    <td className='estado'></td>
+                                    <td><button value={estado._id} onClick={suspenderUser} >Suspender</button></td>
+                                    <td><button value={estado._id}  onClick={quitarSuspension}>Quitar suspensión</button></td>
+                            </tr>
+        );
+    })}
+</tbody>
+                    </table>
+                </div>    

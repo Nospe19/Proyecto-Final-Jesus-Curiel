@@ -1,0 +1,2501 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+a{
+    color: rgb(27, 27, 27);
+}
+
+#form{
+    display: none;
+}
+
+
+#formc{
+    display: none;
+}
+
+#tra{
+    display:none;
+}
+
+#trab{
+    display:none;
+}
+
+
+
+#trac{
+    display: none;
+}
+
+#trad{
+    display: none;
+}
+
+img{
+    width: 100px;
+}
+
+
+
+/*Css del navbar*/
+
+#logo{
+    cursor: pointer;
+    position: relative;
+    left: 15px;
+}
+
+#logoP{
+    cursor: pointer;
+    color: #1E5B5F;
+    font-size: 18px;
+    margin-top: 17px;
+}
+
+#sectionNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#search{
+    width: 500px;
+    height: 40px;
+    border-style: none;
+    background-color: rgb(231, 229, 229);
+    border-radius: 30px;
+    padding-left: 50px;
+    color: gray;
+    font-size: 16px;
+}
+
+#search::placeholder{
+    font-size: 16px;
+}
+
+#search:focus{
+    outline: none;
+}
+
+#lupa{
+    position: relative;
+    left: 30px;
+    color: gray;
+}
+
+#reg{
+    cursor: pointer;
+    text-decoration: none;
+    color: #1E5B5F;
+}
+
+#log{
+    cursor: pointer;
+    text-decoration: none;
+    padding-right: 30px;
+    color: #1E5B5F;
+}
+
+#wel{
+    color: #1E5B5F;
+    font-size: 18px;
+    margin-top: 17px;
+    margin-right: 20px;
+    margin-top: 0px
+}
+
+nav hr{
+    position: relative;
+    top: -6px;
+}
+
+#buscador{
+    background-color:rgb(231, 229, 229) ;
+    width: 400px;
+    position: fixed;
+    z-index: 2;
+    margin-left: 65px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 0.2px;
+    border-color:rgb(179, 176, 176) ;
+}
+
+.div:hover{
+    background-color: #1E5B5F;
+}
+
+
+.avp{
+    text-decoration: none;
+    color: black;
+}
+
+#sectionNav2{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+   
+}
+
+#divA{
+    display: flex;
+    padding-left: 30px;
+    gap: 40px;
+
+}
+
+#divA a{
+    text-decoration: none;
+    font-size: 16.5px;
+}
+
+#divA a:hover
+/*#divA a.active*/{
+    color: #1E5B5F;
+    transition: 0.6s;
+}
+
+#divB{
+    display: flex;
+    padding-right: 40px;
+    font-size: 16.5px;
+    color: #1E5B5F;
+    cursor: pointer;
+}
+
+#divB i{
+    font-size: 22px;
+}
+
+#divB a{
+    text-decoration: none;
+    color: #1E5B5F;
+}
+
+.activeLink{
+    color: #1E5B5F;
+}
+
+/*fin*/
+
+
+/*Css del Main*/
+
+#sectionM{
+    height: 400px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.116),rgba(0, 0, 0, 0.164)), url(../../public/Imagenes-Proyecto/negrita-vinted.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content:start;
+    align-items: center; ;
+}
+
+#sectionM div{
+    background-color: white;
+    width: 380px;
+    height: 250px;
+    margin-left: 100px;
+    padding-top: 15px;
+    padding-left: 30px;
+    border-radius: 4px;
+}
+
+#sectionM div p{
+    padding: 20px;
+    font-size: 28px;
+    color: rgb(32, 32, 32);
+}
+
+.button{
+    background-color: #1E5B5F;
+    border-style: none;
+    border-radius: 2px;
+    width: 220px;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.button:hover{
+    background-color: white;
+    border-radius: 4px;
+    color: #1E5B5F;
+    font-weight: 600;
+    transition: 0.6s;
+    border-style: solid;
+    border-color: #1E5B5F;
+    border-width: 0.5px;
+}
+
+.button:active{
+    background-color: #1E5B5F;
+    color: white;
+    transition: 0.1s;
+}
+
+
+#sectionC{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+   margin-bottom: 60px; 
+}
+
+#sectionC div{
+    background-color: #1E5B5F;
+    width: 500px;
+    height: 300px;
+}
+
+
+#explorerA{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.452)), url(../../public/Imagenes-Proyecto/gaming.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+#explorerA p{
+    color: white;
+    font-size: 30px;
+    padding: 40px;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+#explorerA button{
+    margin-left: 60px;
+}
+
+#explorerB{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.452)), url(../../public/Imagenes-Proyecto/fit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+#explorerB p{
+    color: white;
+    font-size: 30px;
+    padding: 40px;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+#explorerB button{
+    margin-left: 60px;
+}
+
+#sectionD{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #1E5B5F;
+}
+
+#sectionE{
+    background-color: #1E5B5F;
+    margin-top: 80px;
+    height: 300px;
+}
+
+#sectionE div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#secImg{
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+#secImg img{
+    width: 140px;
+}
+
+
+#categoriasP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    font-size: 22px;
+}
+
+
+#sectionF{
+    background-color: #1E5B5F;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+
+
+#miniF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+
+#miniFB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.miniFB{
+    background-color: rgb(216, 208, 208);
+    height: 400px;
+    width: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.miniFBP{
+    font-size: 20px;
+}
+
+#ropa{
+    width: 200px;
+}
+
+.aFBP{
+    color: #1E5B5F;
+    text-decoration: none;
+}
+
+#pc{
+    width: 220px;
+}
+
+#pcD{
+    gap: 45px;
+}
+
+#ps4{
+    width: 250px;
+}
+
+
+#ps4Div{
+    gap: 50px;
+}
+
+
+#sectionH{
+    background-color: #1E5B5F;
+    margin-top: 80px;
+    height: 300px;
+}
+
+#sectionH div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#secImgB{
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+#secImgB img{
+    width: 140px;
+}
+
+#sectionI{
+    background-color: #1E5B5F;
+    margin-top: 80px;
+    height: 300px;
+}
+
+#sectionI div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#secImgC{
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+#secImgC img{
+    width: 140px;
+}
+
+
+#explora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+
+#exploraP{
+    font-size: 20px;
+    color: #1E5B5F;
+}
+
+#sectionJ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    gap: 40px;
+    margin-bottom: 200px;
+}
+
+.divJ{
+    background-color: rgb(224, 224, 224);
+    width: 270px;
+    height: 320px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+   
+}
+
+.divJ:hover{
+    border-radius: 0px;
+    transition: 1s;
+    background-color:rgb(211, 211, 211) ;
+}
+
+.divJB{
+    width: 270px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgJ{
+    width: 130px;
+}
+/*fin 2*/
+
+
+
+/*CSS del Footer*/
+footer{
+    background-color: #1E5B5F;
+}
+
+#sectionFF{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;    
+}
+
+.divFF{
+    height: 220px;
+    width: 200px;
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aFF{
+    color: rgb(230, 225, 225);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.aFF:hover{
+    text-decoration: underline;
+    color: white;
+    transition: 1s;
+}
+
+#sectionFFB{
+    background-color: #1E5B5F;
+    border-top: white 1.5px solid;
+    height: 60px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+#logoFFB{
+    width: 90px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+
+#pFFB{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: -10px;
+    cursor: pointer;
+}
+
+
+/*Fin 3*/
+
+
+/*Register CSS*/
+
+#secR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+    padding-top: 10px;
+}
+
+#divL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#divL img{
+    width: 90px;
+    margin-left: -20px;
+}
+
+#divL p{
+    font-size: 17px;
+    color: #1E5B5F;
+    margin-left: -15px;
+}
+
+#divR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1E5B5F;
+    color: aliceblue;
+    width: 350px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+#register{
+    display: flex;
+    justify-content:end;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.left{
+    margin-left: 0px;
+}
+
+input{
+    width: 250px;
+    height: 30px; 
+    border-radius: 2px;
+    padding-left: 10px;
+    border-style: none;
+    margin-bottom: 10px;
+}
+
+input::placeholder{
+    font-size: 15px;
+}
+
+input:focus{
+    outline:none;
+}
+
+label{
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+
+#submit{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    margin-top: 20px;
+    font-size: 16px;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 0.5px;
+    border-radius: 3px;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 24px;
+}
+
+#submit:hover{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    transition: 0.6s;
+}
+
+#pR{
+    font-size: 14px;
+}
+
+#aR{
+    color: aliceblue;
+}
+
+/*Fin 4*/
+
+
+/*Login Css*/
+#secL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+    padding-top: 10px;
+}
+
+#check{
+    width: 12px;
+    position: relative;
+    top: 9.5px;
+}
+/*Fin 5*/
+
+
+
+/*Css de Categories*/
+
+#results{
+    background-color: #1E5B5F;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    align-items: center;
+    color: aliceblue;
+    height: 35px;
+}
+
+
+#resultsD{
+    display: flex;
+    align-items: center;
+}
+
+#price{
+    height: 20px;
+    margin-top: 10.5px;
+    width: 190px;
+    color: gray;
+}
+
+#results button{
+    background-color: white;
+    color: #1E5B5F;
+    border-style: solid;
+    border-radius: 3px;
+    height: 20px;
+    width: 60px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-color: white;
+    padding: 0px 5px 15px 5px;
+    border-width: 0.5px;
+}
+
+#results button:hover{
+    background-color: #1E5B5F;
+    color: white;
+    transition: 0.5s;
+}
+
+#products{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 180px;
+    padding-top: 40px;
+    margin-bottom: 250px;
+    padding-left: 120px;
+}
+
+
+
+.card{
+    margin-bottom: -100px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.image-container{
+    width: 150px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.image{
+    width: 140px;
+    margin-left: -50px;
+}
+
+.info{
+    width: 140px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.priceB{
+    color: #1E5B5F;
+    margin-bottom: 20px;
+}
+
+.viewProduct{
+    color: #1E5B5F;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#prev{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    margin-right: 10px;
+    cursor: pointer;
+    border-style: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#prev:hover{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    transition: 0.6s;
+}
+#next{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    margin-left: 10px;
+    cursor: pointer;
+    border-style: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#next:hover{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    transition: 0.6s;
+}
+
+/*Fin 6*/
+
+
+/*css de Product*/
+#hrP{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#secProduct{
+    display: flex;
+    padding-left: 80px;
+    margin-bottom: 100px;
+}
+#producto{
+    width: 400px;
+    height: 550px;
+}
+#descripcion{
+
+    width: 400px;
+    height: 550px;
+    padding-top: 40px;
+}
+#cuadro{
+    width: 400px;
+    height: 350px;
+    padding-top: 40px;
+    border-style: solid;
+    border-width: 1.1px;
+    border-radius: 1px;
+    border-color: #1E5B5F;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 40px;
+    padding-top: 60px;
+    padding-left: 30px;
+    gap: 2px;
+}
+
+#divImg{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+#imgPrincipal{
+    width: 180px;
+}
+
+#divImg:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#divImgB{
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#imgSecundaria{
+    width: 100px;
+    border-style: solid;
+    border-width: 0.6px;
+    border-color:#1E5B5F;
+    border-radius: 1px;
+    background-color: rgb(202, 199, 199);
+    padding: 6px;
+}
+
+
+#divPNombre{
+    width: 380px;
+    height: 100px;
+    overflow: hidden;
+}
+
+#hrPrice{
+    width: 380px;
+    border-color: rgb(37, 37, 37);  
+    background-color: rgb(37, 37, 37);
+}
+
+#divDesc{
+    width: 380px;
+    height: 350px;
+    overflow: hidden;
+}
+
+#btnAdd{
+    background-color: #1E5B5F;
+    border-style: none;
+    border-radius: 2px;
+    width: 220px;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+#btnAdd:hover{
+    background-color: white;
+    border-radius: 4px;
+    color: #1E5B5F;
+    font-weight: 600;
+    transition: 0.6s;
+    border-style: solid;
+    border-color: #1E5B5F;
+    border-width: 0.2px;
+}
+/*fin 7*/
+
+
+/*Css de Uploads*/
+
+#divPub{
+    background-color: #1E5B5F;
+    height: 40px;
+    color: aliceblue;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    padding-left: 100px;
+}
+
+
+
+#divFormB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    padding-right: 140px;
+}
+
+#divFormC{
+    background-color: rgb(219, 216, 216);
+    width: 1000px;
+    padding: 50px;
+    padding-left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#formPub{
+    display: flex;
+    justify-content: start ;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#labelA{
+    margin-right: 220px;
+}
+
+.text-area{
+    background-color: rgb(219, 216, 216);
+    border-bottom-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 400px;
+    height: 30px; 
+    cursor: pointer;
+    margin-right: 130px;
+    font-size: 16px;
+    outline: none;
+
+}
+
+
+
+#labelC{
+    margin-right: 215px;
+    margin-top: 0px;
+}
+
+#labelD{
+    margin-right: 236px;
+}
+
+
+#labelE{
+    margin-right: 195px;
+}
+
+textarea{
+    margin-right: 50px;
+    width: 400px;
+    height: 150px;
+    font-size: 14px;
+    outline: none;
+    resize: none;
+    background-color: rgb(219, 216, 216);
+    border-color: black;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+}
+
+
+#labelB{
+    margin-right: 210px;
+    margin-top: 50px;
+}
+
+#categoria{
+    background-color: rgb(219, 216, 216);
+    border-style: none;
+    outline: none;
+    margin-right: 180px;
+    margin-top: 50px;
+} 
+
+.option{
+    background-color: rgb(219, 216, 216);
+    border-style: none;
+    outline: none;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+.option:hover{
+    background-color: white;
+    color: #1E5B5F;
+    transition: 0.5s;
+}
+
+
+#labelF{
+    margin-right: 220px;
+}
+
+#image{
+    margin-right: 220px;
+    margin-top: 20px;
+    background-color: rgb(219, 216, 216);
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#boton{
+    background-color: #1E5B5F;
+    border-style: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 60px;
+    position:relative;
+    left: 440px;
+}
+
+#boton:hover{
+    background-color: aliceblue;
+    border-radius: 4px;
+    color: #1E5B5F;
+    font-weight: 600;
+    transition: 0.6s;
+    border-style: solid;
+    border-color: #1E5B5F;
+    border-width: 0.2px;
+}
+
+
+/* Fin 8*/
+
+/* Css del Carrito */
+#bodyC{
+    background-color: rgb(219, 216, 216);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:0px;
+}
+
+#carrito{
+   background-color: white;
+   width: 700px;
+   padding: 15px 40px;
+   margin-bottom: 60px;
+   border-radius: 4px;
+}
+#total{
+    background-color: white;
+}
+
+#hrCar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.divCarrito{   
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    margin-bottom: 30px;   
+}
+
+
+
+.hrCarB{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.imgCarrito{
+    width: 110px;
+}
+
+.divCarritoB{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 30px;
+    gap: 0px;
+}
+
+.nombreStyles{
+    width: 200px;
+    height: 80px;
+    font-size: 16px;
+    margin-top: -10px;
+    overflow: hidden;
+}
+
+.botonCar{
+    background-color: #1E5B5F;
+    border-style: solid;
+    border-color: #1E5B5F;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 5px 15px;
+}
+
+
+.botonCar:hover{
+    background-color: aliceblue;
+    border-radius: 4px;
+    color: #1E5B5F;
+    font-weight: 600;
+    transition: 0.6s;
+    border-style: solid;
+    border-color: #1E5B5F;
+}
+
+.divCarritoC{
+    width: 200px;
+    display: flex;
+    justify-content:right;
+    flex-direction:  column;
+    padding-left: 120px;
+    gap:50px;
+}
+
+.pPrice{
+    font-size: 17px;
+    color:  #1E5B5F;
+    font-weight: 600;
+}
+
+.inputCarrito{
+    width: 15px;
+}
+
+
+#total{
+    width: 360px;
+    height: 300px;
+    padding: 50px 40px;
+    border-radius: 4px;
+}
+
+
+#botonCarB{
+    background-color: #1E5B5F;
+    border-style: solid;
+    border-color: #1E5B5F;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 5px 20px;
+    border-width: 1px;
+}
+
+#botonCarB a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+#botonCarB:hover{
+    background-color: aliceblue;
+    border-radius: 4px;
+    color: #1E5B5F;
+    font-weight: 600;
+    transition: 0.6s;
+    border-style: solid;
+    border-color: #1E5B5F;
+}   
+
+#botonCarB a:hover{
+    color: #1E5B5F;
+    transition: 0.6s;
+}
+
+/* Fin 9 */
+
+
+/*Css de Select metodo de pago*/
+
+#pagoDivA{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: #1E5B5F;
+    color: aliceblue;
+}
+
+#sectionPagos{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 200px;
+    flex-wrap: wrap;
+}
+
+#movilDiv{
+    background-color: #1E5B5F;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#movilDiv:hover{
+    transition: 0.6s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#transferenciaDiv{
+    background-color: #1E5B5F;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#transferenciaDiv:hover{
+    transition: 0.6s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.pagoP{
+    color: aliceblue;
+    font-size: 17px;
+}
+
+#movilB{
+    color: #1E5B5F;
+    font-size: 16px;
+    margin-top: 40px;
+    border: 1px solid #1E5B5F;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#movilB:hover{
+    background-color:#1E5B5F;
+    color: aliceblue;
+    transition: 0.6s;
+    border-style: solid;
+    border-color: aliceblue;
+}
+
+#transferenciaB{
+    color: #1E5B5F;
+    font-size: 16px;
+    margin-top: 40px;
+    border: 1px solid #1E5B5F;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#transferenciaB:hover{
+    background-color:#1E5B5F;
+    color: aliceblue;
+    transition: 0.6s;
+    border-style: solid;
+    border-color: aliceblue;
+}
+
+
+/*Fin 10*/
+
+/*PAago movil css*/
+#pagoJ{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 0px;
+    background-color: #1E5B5F;
+    color: aliceblue;
+    padding: 2px;
+    margin-bottom: 100px;
+}
+
+#pagoSecA{
+    display: flex;
+    justify-content: center;
+
+}
+
+#pagoSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 100px;
+    margin-bottom: 100px;
+    background-color: #1E5B5F;
+    width: 510px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.white{
+    color: aliceblue;
+}
+
+.whiteB{
+    color: aliceblue;
+    background-color: #1E5B5F;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: aliceblue;
+}
+
+.whiteB:hover{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    transition: 0.6s;
+    border-style: solid;
+    border-color: #1E5B5F;
+}
+/*Fin 11*/
+
+
+/*Css de transferencia*/
+
+#pagoSecB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    gap: 100px;
+    padding: 20px;
+    margin-bottom: 100px;
+    background-color: #1E5B5F;
+    width: 530px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/*Fin 12*/
+
+
+/*Css del User profile*/
+
+#userDP{
+    background-color: #1E5B5F;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.closeS{
+    color:#1E5B5F;
+    cursor: pointer;
+    font-size:15px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #1E5B5F;
+    background-color: aliceblue;
+
+}
+
+.closeS:hover{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    transition: 0.6s;
+    border-style: solid;
+    border-color: aliceblue;
+}
+
+#misPagos{
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+#misPagosP{
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 20px;
+}
+
+.misPagosPB{
+    color: aliceblue;
+    font-size: 16px;
+    background-color: #1E5B5F;
+    width: 320px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 0px;
+    cursor: pointer;
+}
+
+.misPagosPB:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+#vDiv{
+    padding-left: 20px;
+}
+
+#misPagosV{
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.misPagosVB{
+    text-decoration: none;
+    color: #1E5B5F;
+    font-size: 16px;
+}
+
+/*fin 13*/
+
+
+/*Css de Perfil Vendedor*/
+
+#secSell{
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+#divSell{
+    display: flex;
+}
+
+#tableS{
+    background-color: #1E5B5F;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: aliceblue;
+    width: 1200px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 17px;
+    height: 600px;
+}
+
+#thead{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    border-radius: 10px;
+    font-size: 17px;
+    width: 150px;
+    overflow: hidden;
+}
+
+#data{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+
+}
+
+#trSel{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    width: 200px;
+    overflow: hidden;
+    
+}
+
+.tdSel{
+    padding: 15px;
+    font-size: 17px;
+    overflow: hidden;
+    width: 200px;
+    border: aliceblue 1px solid;
+    border-radius: 2px;
+}
+
+.divSelB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#eraser{
+    color: aliceblue;
+    background-color: rgb(230, 25, 25);
+    border-style: solid;
+    border-color: #1E5B5F;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#eraser:hover{
+    background-color: aliceblue;
+    color: rgb(230, 25, 25);
+    transition: 0.6s;
+    border-style: solid;
+    border-color: aliceblue;
+}
+.edit{
+    color: aliceblue;
+    background-color: #1E5B5F;
+    border-style:solid;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 25px;
+    border-color: aliceblue;
+}
+
+.edit:hover{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    transition: 0.6s;
+    border-style: solid;
+    border-color: aliceblue;
+}
+
+#formSel{
+   background-color: #1E5B5F;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   width: 500px;
+}
+
+#registroSec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+#registroSec h3{
+    color: #1E5B5F;
+    position: relative;
+    margin-right: 100px;
+}
+
+
+#registroSec div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 40px;
+    margin-right: 40px;
+    color: #1E5B5F;
+    font-size: 17px;
+}
+
+
+/*fin 14*/
+
+
+/*css de Factura*/
+#facturaB{
+    background-color: rgb(187, 187, 185);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 40px;
+}
+
+#facturaS{
+    background-color: aliceblue;
+    width: 600px;
+    height: 450px;
+    font-size: 16px;
+    border-style: solid;
+    border-color: rgb(39, 39, 39);
+    border-width: 2px;
+    padding: 3px;
+}
+
+
+.facturaDiv{
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.facturaDiv2{
+    display: flex;
+    gap: 10px;
+}
+
+.facturaFecha{
+    border-bottom: black 1px solid;
+}
+
+.facturaDiv3{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 20px;
+}
+
+.facturaDiv4{
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+#facturaSB{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.facturaDiv5{
+    display: flex;
+    align-items: center;
+    margin-left: -60px;
+}
+
+.facturaDiv5 p{
+    color: #1E5B5F;
+    margin-left: -15px;
+}
+
+/* fin 15 */
+
+#bodyAdmin{
+    background-color: #1E5B5F;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sectionAdmin{
+    background-color: aliceblue;
+    width: 90vw;
+    height: 90vh;
+    border-radius:10px;
+    display: flex;
+}
+
+#sectionAdminB{
+    background-color: rgb(190, 189, 189);
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 20px;
+}
+
+
+#userDPB{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#userDPB i{
+    font-size: 19px;
+}
+
+
+.buttonAdmin{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    font-size: 16px;
+    border-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttonAdmin:hover{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+.buttonAdmin:active{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+#userDPC{
+    padding-top: 50px;
+    display: flex;
+    padding-right: 70px;
+}
+
+#userDPC button{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    font-size: 16px;
+    border-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+#userDPC button:hover{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    transition: 0.3s;
+}
+
+#userDPC button:active{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    transition: 0.3s;
+}
+
+
+/*css de la seccion b*/
+
+#sectionAdminC{
+    width: 100%;
+    border-radius:10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sectionPanelA{
+    padding: 20px;
+}
+
+#titleAdminA{
+    color: #1E5B5F;
+    justify-content: left;
+    padding-left: 40px;
+}
+
+#userAdminA{
+    width: 70vw;
+    height: 70vh; /*470px*/
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+#userAdminA::-webkit-scrollbar{
+    background-color: #1E5B5F;
+    border-radius: 5px;
+    width: 10px;
+
+}
+
+#userAdminA::-webkit-scrollbar-thumb{
+    background-color:rgb(190, 189, 189);
+    border-radius: 5px;
+}
+
+
+.userAdmin{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    border-radius: 5px;
+    width: 420px;
+    height: 200px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 60px;
+}
+
+.userAdmin:hover{
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.divButton{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+.editAd{
+    color: aliceblue;
+    background-color: #1E5B5F;
+    border-style: solid;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: aliceblue;
+}
+
+.editAd:hover{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    transition: 0.6s;
+}
+
+.deleteAd{
+    color: aliceblue;
+    background-color:rgb(202, 1, 1);
+    border-style: solid;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: aliceblue;
+}
+
+.deleteAd:hover{
+    background-color: aliceblue;
+    color: rgb(202, 1, 1);
+    transition: 0.6s;
+}
+
+#formb{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 50px;
+    background-color: #1E5B5F;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: aliceblue;
+    align-items: center;
+}
+
+#formb form{
+    width: 35vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0px;
+}
+
+#formb form input{
+    margin-top: -10px;
+}
+
+#rol{
+    height: 30px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+}
+
+#buttonEditAd{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    font-size: 16px;
+    border-style: solid;
+    border-color: aliceblue;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+
+#buttonEditAd:hover{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    transition: 0.3s;
+}
+
+
+.divEstadoAd{
+    padding-top: 40px;
+    background-color: #1E5B5F;
+    color: aliceblue;
+    border-radius: 5px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+.divEstadoAd{
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#sectionPanelB{
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px
+}
+
+/*segundo dashboard*/
+
+#sectionPanelC{
+    padding: 20px;
+}
+
+#titleAdminB{
+    color: #1E5B5F;
+    justify-content: left;
+    padding-left: 40px;
+}
+
+
+#userAdminB{
+    width: 70vw;
+    height: 70vh;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+#userAdminB::-webkit-scrollbar{
+    background-color: #1E5B5F;
+    border-radius: 5px;
+    width: 10px;
+
+}
+
+#userAdminB::-webkit-scrollbar-thumb{
+    background-color:rgb(190, 189, 189);
+    border-radius: 5px;
+}
+
+
+#formCD{
+    background-color: #1E5B5F;
+    padding-top: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+#formCD form{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1E5B5F;
+    border-radius: 10px;
+    color: aliceblue;
+    align-items: center;
+}
+
+#buttonC{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    font-size: 16px;
+    border-style: solid;
+    border-color: aliceblue;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+   }
+
+
+#buttonC:hover{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    transition: 0.3s;
+}
+
+
+
+/*tercer dashboard*/
+
+
+
+#sectionPanelD{
+    padding: 20px;
+}
+
+#titleAdminC{
+    color: #1E5B5F;
+    justify-content: left;
+    padding-left: 40px;
+}
+
+#userAdminC{
+    width: 70vw;
+    height: 70vh;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+#userAdminC::-webkit-scrollbar{
+    background-color: #1E5B5F;
+    border-radius: 5px;
+    width: 10px;
+
+}
+
+#userAdminC::-webkit-scrollbar-thumb{
+    background-color:rgb(190, 189, 189);
+    border-radius: 5px;
+}
+
+.userAdminC{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    border-radius: 5px;
+    width: 420px;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 60px;
+}
+
+.userAdminC:hover{
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.divButtonC{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.buttonEditAd{
+    background-color: #b1bb22;
+    color: aliceblue;
+    font-size: 16px;
+    border-style: solid;
+    border-color: aliceblue;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+
+.buttonEditAd:hover{
+    background-color: aliceblue;
+    color: #b1bb22;
+    transition: 0.3s;
+}
+
+
+#formcc{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+    background-color: #1E5B5F;
+    margin-top: 100px;
+    border-radius: 10px;
+    color: aliceblue;
+    align-items: center;
+}
+
+#formcc form{
+    width: 35vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0px;
+}
+
+#formcc form select{
+    margin-top: 10px;
+    padding: 5px;
+    width: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: aliceblue;
+    background-color: #1E5B5F;
+    color: aliceblue;
+    outline: none;
+}
+
+#formcc form textarea{
+    margin-top: 10px;
+    padding: 5px;
+    width: 320px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: aliceblue;
+    padding-right: 0px;
+    margin-right: 0px;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+#formcc form input{
+    margin-top: -10px;
+}
+
+/* fin tercer dashboard*/
+
+/*cuarto dashboard */
+
+#sectionPanelE{
+    padding: 20px;
+}
+
+#titleAdminD{
+    color: #1E5B5F;
+    justify-content: left;
+    padding-left: 40px;
+}
+
+#userAdminD{
+    width: 70vw;
+    height: 70vh;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+#userAdminD::-webkit-scrollbar{
+    background-color: #1E5B5F;
+    border-radius: 5px;
+    width: 10px;
+
+}
+
+#userAdminD::-webkit-scrollbar-thumb{
+    background-color:rgb(190, 189, 189);
+    border-radius: 5px;
+}
+
+
+.userAdminD{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    border-radius: 5px;
+    width: 420px;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 60px;
+}
+
+.userAdminD:hover{
+    transition: 0.7s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.buttonEditAdB{
+    background-color: #1E5B5F;
+    color: aliceblue;
+    font-size: 16px;
+    border-style: solid;
+    border-color: aliceblue;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+
+.buttonEditAdB:hover{
+    background-color: aliceblue;
+    color: #1E5B5F;
+    transition: 0.3s;
+}
+
+#estadisticasSS{
+    color:#1E5B5F;
+    padding-top: 70px;
+    margin-bottom: 50px;
+    display: flex ;
+    align-items: center;
+    gap:60px;
+    font-size: 18px;
+}
+
+
+/*Css de Admin*/
+
+
+/**
+
+    Responsive
+    
+    
+
+
+**/
+
+
+@media only screen and (max-width: 1000px){
+#sectionNav{
+
+} 
+
+#search{
+    display: none;
+}
+#lupa{
+    display: none;
+}
+
+#sectionNav2{
+    padding: 10px;
+    overflow: auto;
+    gap: 10px;
+}
+
+#sectionNav2::-webkit-scrollbar{
+    background-color: #1E5B5F;
+    border-radius: 5px;
+    width: 1px;
+    height: 8px;
+}
+
+#sectionNav2::-webkit-scrollbar-thumb{
+    background-color:rgb(190, 189, 189);
+    border-radius: 5px;
+}
+
+#sectionM{
+    justify-content: center;
+    
+}
+#sectionM div{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+#sectionC{
+    flex-direction: column;
+    gap: 30px;
+}
+
+#sectionE{
+height: 320px;
+}
+
+#sectionE div{
+    font-size: 17px;
+}
+
+#secImg{
+    overflow: hidden;
+    justify-content: center;
+}
+
+#secImgB{
+    overflow: hidden;
+    gap: 150px;
+}
+
+#secImgC{
+    overflow: hidden;
+    gap: 150px;
+    justify-content: space-around;
+}
+
+#sectionFF{
+    flex-direction: column;
+    gap: 0px;
+    justify-content: start;
+    align-items: start;
+    padding-left: 50px;
+}
+
+.divFF{
+    height: 180px;
+}
+#secProduct{
+    flex-wrap: wrap;
+}
+
+.divCarritoC{
+    width: 200px;
+    padding-left: 0px;
+}
+
+#secSell{
+    padding-left: 0px;
+
+}
+
+#divFormB{
+    padding-right: 0px;
+}
+
+#divFormC{
+    width: 500px;
+    padding-left: 170px;
+
+}
+
+#boton{
+    left: 0px;
+}
+
+@media only screen and (max-width: 850px){
+    #vanish{
+        display: none;
+    }
+    
+    .vanish{
+        display: none;
+    }
+
+    #sectionPanelA{
+        padding: 0px;
+    }
+    #userAdminA{
+        padding: 0px;
+        padding-top: 20px;
+    }    
+    }
+}
+
+/*fin*/
